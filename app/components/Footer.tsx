@@ -80,9 +80,6 @@ const Footer = () => {
             <div className="text-center sm:text-left">
               <h3 className="text-lg font-semibold mb-4 text-blue-400">More</h3>
               <nav className="flex flex-col space-y-2">
-                <Link href="#testimonials" className="text-gray-400 hover:text-white transition-colors">
-                  Testimonials
-                </Link>
                 <Link href="#contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact
                 </Link>
