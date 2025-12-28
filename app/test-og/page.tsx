@@ -16,12 +16,7 @@ export const metadata: Metadata = {
       }
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Social Media Share Preview Test | Moussa Jaafar',
-    description: 'Test how your site appears when shared on social media platforms with proper OpenGraph tags.',
-    images: ['/images/socialshare.png'],
-  },
+
 };
 
 export default function TestOGPage() {

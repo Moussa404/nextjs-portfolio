@@ -3,7 +3,7 @@
 ## ✅ What You Need to Know
 
 ### Email Recipients (Hardcoded):
-- ✅ `mehedims2005@gmail.com` (Primary)
+- ✅ `MoussaJa2005@gmail.com` (Primary)
 - ✅ `Moussajaafar8@gmail.com` (Secondary)
 - **Both receive every contact form submission**
 
@@ -79,7 +79,7 @@ MAIL_FROM=your@gmail.com
 
 You'll know it's working when:
 - ✅ Contact form shows: "Email sent successfully"
-- ✅ Logs show: `accepted: ['mehedims2005@gmail.com', 'Moussajaafar8@gmail.com']`
+- ✅ Logs show: `accepted: ['MoussaJa2005@gmail.com', 'Moussajaafar8@gmail.com']`
 - ✅ Both emails received
 - ✅ No errors in logs
 

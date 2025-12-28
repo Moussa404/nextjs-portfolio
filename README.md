@@ -2,7 +2,7 @@
 
 A modern, performance-optimized portfolio website built with Next.js and Tailwind CSS, designed to showcase a web developer's work and skills with a seamless user experience.
 
-[![GitHub stars](https://img.shields.io/github/stars/asma019/NodeJs-Portfolio-Mehedi-Hasan?style=social)](https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan/stargazers) [![Latest Release](https://img.shields.io/github/v/release/asma019/NodeJs-Portfolio-Mehedi-Hasan?style=flat-square)](https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan/releases/tag/v)
+[![GitHub stars](https://img.shields.io/github/stars/asma019/NodeJs-Portfolio-Mehedi-Hasan?style=social)](https://github.com/Moussa404/nextjs-portfolio/stargazers) [![Latest Release](https://img.shields.io/github/v/release/asma019/NodeJs-Portfolio-Mehedi-Hasan?style=flat-square)](https://github.com/Moussa404/nextjs-portfolio/releases/tag/v)
 
 ![Portfolio Preview](/public/images/socialshare.png)
 
@@ -64,7 +64,7 @@ A modern, performance-optimized portfolio website built with Next.js and Tailwin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan.git
+   git clone https://github.com/Moussa404/nextjs-portfolio.git
    cd NodeJs-Portfolio-Mehedi-Hasan
    ```
 
@@ -105,7 +105,7 @@ NEXT_PUBLIC_BASE_URL=https://yourdomain.com
 - See **[SMTP_SETUP_GUIDE.md](./SMTP_SETUP_GUIDE.md)** for detailed Gmail setup instructions
 - See **[EMAIL_TROUBLESHOOTING.md](./EMAIL_TROUBLESHOOTING.md)** if emails aren't being received
 
-**Emails are sent to:** `mehedims2005@gmail.com` and `Moussajaafar8@gmail.com`
+**Emails are sent to:** `MoussaJa2005@gmail.com` and `Moussajaafar8@gmail.com`
 
 For production, set these environment variables in your hosting platform.
 
@@ -139,7 +139,7 @@ For production, set these environment variables in your hosting platform.
 
 Deploy to Heroku with a single click:
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Moussa404/nextjs-portfolio)
 
 **Steps:**
 1. Click the button above
@@ -163,7 +163,7 @@ Deploy to Heroku with a single click:
 
 This project is also optimized for [Vercel](https://vercel.com/), which offers the simplest deployment experience for Next.js.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Moussa404/nextjs-portfolio)
 
 **Steps:**
 1. Push your code to a GitHub repository
@@ -423,7 +423,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📦 Latest Release
 
-Check out the [latest release](https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan/releases/tag/v) for the most up-to-date version.
+Check out the [latest release](https://github.com/Moussa404/nextjs-portfolio/releases/tag/v) for the most up-to-date version.
 
 ### Recent Updates
 - ✨ Added Heroku one-click deployment support
@@ -460,6 +460,6 @@ The PDF will be generated with modern styling including:
 
 ---
 
-⭐ **If you find this project useful, please consider [giving it a star on GitHub](https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan)!** ⭐
+⭐ **If you find this project useful, please consider [giving it a star on GitHub](https://github.com/Moussa404/nextjs-portfolio)!** ⭐
 
 Built with ❤️ by [Moussa Jaafar](https://github.com/asma019)

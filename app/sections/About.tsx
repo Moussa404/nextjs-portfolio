@@ -10,44 +10,32 @@ const About = () => {
     { name: "JavaScript", level: 80 },
     { name: "TypeScript", level: 75 },
     { name: "Node.js", level: 70 },
-    { name: "Python", level: 65 },
-    { name: "Express", level: 75 },
     { name: "Java", level: 60 },
     { name: "MySQL", level: 70 },
-    { name: "WordPress", level: 92 },
-    { name: "Server Management", level: 85 },
+    { name: "Laravel", level: 92 },
+    { name: "PhpMyAdmin", level: 85 },
   ];
 
   const categories = [
     {
       icon: <FiCode size={24} />,
       title: "Frontend Development",
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript"],
+      skills: ["HTML", "CSS", "JavaScript", "TypeScript","next.js"],
     },
     {
       icon: <FiServer size={24} />,
       title: "Backend Development",
-      skills: ["Node.js", "Express", "Python", "Java"],
+      skills: ["Node.js", "Laravel", "PHP", "Java"],
     },
     {
       icon: <FiDatabase size={24} />,
       title: "Database",
-      skills: ["MySQL"],
+      skills: ["MySQL","PhpMyAdmin"],
     },
     {
       icon: <FiLayout size={24} />,
       title: "Design",
       skills: ["Responsive Design", "UI/UX Basics"],
-    },
-    {
-      icon: <FiGlobe size={24} />,
-      title: "WordPress",
-      skills: ["WordPress Speed Optimization", "Theme Development", "Plugin Customization"],
-    },
-    {
-      icon: <FiServer size={24} />,
-      title: "Server Management",
-      skills: ["cPanel", "Webuzo", "CyberPanel", "HostiaCP", "VPS Configuration"],
     },
   ];
 
@@ -96,9 +84,11 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="paragraph text-gray-600 dark:text-gray-400 mb-6 leading-relaxed relative z-10"
               >
-                I am a freelance web developer passionate about creating high-quality, functional websites 
-                and web applications for clients worldwide. With over 3 years of experience in web development 
-                and digital solutions, I've built a strong foundation in both frontend and backend technologies.
+               I am a web developer focused on building clean, functional,
+               and user-friendly websites and web applications. With hands-on 
+               experience in frontend and backend development, I’ve worked on real projects
+                including e-commerce platforms and business websites, and I’m continuously expanding my skills with
+                 modern web technologies.
               </motion.p>
               
               <motion.p 
@@ -108,8 +98,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="paragraph text-gray-600 dark:text-gray-400 mb-6 leading-relaxed relative z-10"
               >
-                Currently studying towards a Diploma in Engineering at Mangrove Institute of Science and Technology (2023-2027), 
-                I'm constantly improving my technical skills while working professionally as a freelancer.
+                I have completed my License Technique (LT) in Information Technology and am currently gaining hands-on experience while earning certifications in web development and the fundamentals of cybersecurity.
               </motion.p>
               
               <motion.p 
@@ -121,7 +110,6 @@ const About = () => {
               >
                 I specialize in building responsive websites, e-commerce platforms, and custom web applications 
                 for clients on Fiverr and other platforms, turning complex requirements into elegant, user-friendly solutions.
-                I'm also an expert in WordPress speed optimization and VPS control panel setup including cPanel, Webuzo, CyberPanel, and HostiaCP.
               </motion.p>
             </div>
             

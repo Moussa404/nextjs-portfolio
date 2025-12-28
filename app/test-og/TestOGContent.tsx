@@ -17,7 +17,7 @@ export default function TestOGContent() {
         <div className="space-y-6">
           <div>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              This page lets you test how your site's social sharing image appears. This is the image that will be shown when sharing your site on platforms like Facebook, Twitter, LinkedIn, etc.
+              This page lets you test how your site's social sharing image appears. This is the image that will be shown when sharing your site on platforms like Facebook and LinkedIn.
             </p>
             
             <div className="flex space-x-3 mb-6">
@@ -64,16 +64,10 @@ export default function TestOGContent() {
               <pre className="text-xs text-gray-800 dark:text-gray-300">
 {`<meta property="og:title" content="Moussa Jaafar | Freelancer And Web Developer From lebanon">
 <meta property="og:description" content="Freelance web developer with 3+ years of experience creating responsive, user-friendly websites and web applications.">
-<meta property="og:image" content="https://mehedims.com/images/socialshare.png">
-<meta property="og:url" content="https://mehedims.com">
+<meta property="og:image" content="https://MoussaJa.com/images/socialshare.png">
+<meta property="og:url" content="https://MoussaJa.com">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Moussa Jaafar | Freelancer And Web Developer From lebanon">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Moussa Jaafar | Freelancer And Web Developer From lebanon">
-<meta name="twitter:description" content="Freelance web developer with 3+ years of experience creating responsive, user-friendly websites and web applications.">
-<meta name="twitter:image" content="https://mehedims.com/images/socialshare.png">
-<meta name="twitter:creator" content="@mehedihasan">`}
+<meta property="og:site_name" content="Moussa Jaafar | Freelancer And Web Developer From lebanon">`}
               </pre>
             </div>
           </div>
@@ -94,16 +88,6 @@ export default function TestOGContent() {
                   className="hover:underline"
                 >
                   Facebook Sharing Debugger
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://cards-dev.twitter.com/validator" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  Twitter Card Validator
                 </a>
               </li>
               <li>

@@ -4,7 +4,7 @@ Allow: /
 Disallow: /test-og
 
 # Host
-Host: https://mehedims.com
+Host: https://MoussaJa.com
 
 # Sitemaps
-Sitemap: https://mehedims.com/sitemap.xml
+Sitemap: https://MoussaJa.com/sitemap.xml

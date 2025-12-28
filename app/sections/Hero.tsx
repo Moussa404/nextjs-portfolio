@@ -36,7 +36,7 @@ const Hero = () => {
               </h1>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-700 dark:text-gray-300">
                 <span className="relative">
-                  Freelance Web Developer
+                  Fullstack Web Developer
                   <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-300 rounded-full"></div>
                 </span>
               </h2>
@@ -65,9 +65,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-lg mb-8 leading-relaxed"
             >
-              I'm a professional freelance web developer with 3+ years of experience creating responsive, 
-              user-friendly websites and web applications. I specialize in both frontend and backend development, 
-              turning clients' ideas into polished digital solutions.
+              I'm a full stack web developer with hands-on experience in building complete web applications from frontend interfaces to backend systems. I specialize in creating responsive, scalable, and user-friendly solutions, combining my knowledge of web development fundamentals, frameworks like Laravel, and modern frontend technologies to turn ideas into functional, polished digital products.
             </motion.p>
             
             <motion.div

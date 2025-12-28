@@ -23,12 +23,11 @@ const Footer = () => {
               <Logo showText={false} />
               <h2 className="text-2xl font-bold ml-3">Moussa Jaafar</h2>
             </div>
-            <p className="text-gray-400 mt-1 mb-4 max-w-md">
-              Diploma in Engineering Student & Tech Enthusiast with a passion for creating engaging digital solutions.
+            <p className="text-gray-400 mt-1 mb-4 max-w-md">Full Stack Web Developer
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
               <a
-                href="https://github.com/asma019/"
+                href="https://github.com/Moussa404"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors duration-300"
@@ -44,14 +43,14 @@ const Footer = () => {
                 <FiMail size={18} />
               </a>
               <a
-                href="tel:+961 81 913 762"
+                href="tel:+96181913762"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors duration-300"
                 aria-label="Phone"
               >
                 <FiPhone size={18} />
               </a>
               <a
-                href="https://maps.google.com/?q=Khulna+University+Khulna+lebanon"
+                href="https://maps.google.com/?q=Beirut+Lebanon"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors duration-300"
@@ -81,9 +80,6 @@ const Footer = () => {
             <div className="text-center sm:text-left">
               <h3 className="text-lg font-semibold mb-4 text-blue-400">More</h3>
               <nav className="flex flex-col space-y-2">
-                <Link href="#projects" className="text-gray-400 hover:text-white transition-colors">
-                  Projects
-                </Link>
                 <Link href="#testimonials" className="text-gray-400 hover:text-white transition-colors">
                   Testimonials
                 </Link>
@@ -91,7 +87,7 @@ const Footer = () => {
                   Contact
                 </Link>
                 <a 
-                  href="https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan" 
+                  href="https://github.com/Moussa404/nextjs-portfolio" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
@@ -113,7 +109,7 @@ const Footer = () => {
               </Link>
             </p>
             <a 
-              href="https://github.com/asma019/NodeJs-Portfolio-Mehedi-Hasan" 
+              href="https://github.com/Moussa404/nextjs-portfolio" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-xs flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
@@ -125,9 +121,9 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center gap-2 text-gray-400 text-sm">
-            <span>Made with</span>
-            <span className="text-red-500">❤</span>
-            <span>using Next.js & Tailwind CSS</span>
+          
+            <span className="text-red-500">                   </span>
+            
           </div>
           
           <button

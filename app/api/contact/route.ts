@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { name, email, subject, message } = body;
-    const formName = "MehediMS"; // Adding the form name
+    const formName = "MoussaJa"; // Adding the form name
 
     // Validate form inputs
     if (!name || !email || !subject || !message) {
@@ -59,12 +59,33 @@ export async function POST(request: Request) {
       );
     }
 
-    // Send to both email addresses
-    const recipients = ['mehedims2005@gmail.com', 'Moussajaafar8@gmail.com'];
+    // Determine MAIL_FROM (fallback to SMTP_USER) and recipient list (fallback to your Gmail)
+    const mailFrom = process.env.MAIL_FROM || process.env.SMTP_USER;
+    if (!mailFrom) {
+      console.error('MAIL_FROM not set and SMTP_USER not available');
+      return NextResponse.json(
+        { error: 'Sender address not configured. Please set MAIL_FROM or SMTP_USER.' },
+        { status: 500 }
+      );
+    }
+
+    // Allow overriding recipients with MAIL_TO env var (comma-separated), otherwise send to your Gmail only
+    let recipients = (process.env.MAIL_TO || 'Moussajaafar8@gmail.com')
+      .split(',')
+      .map((r) => r.trim())
+      .filter(Boolean);
+
+    // Ensure your main email is always included
+    if (!recipients.some((r) => r.toLowerCase() === 'moussajaafar8@gmail.com')) {
+      recipients.push('Moussajaafar8@gmail.com');
+    }
+
+    // Remove duplicates
+    recipients = Array.from(new Set(recipients.map((r) => r.toLowerCase())));
 
     const mailOptions = {
-      from: process.env.MAIL_FROM,
-      to: recipients.join(', '), // Send to both addresses
+      from: mailFrom,
+      to: recipients.join(', '),
       subject: `${formName} Contact: ${subject}`,
       replyTo: email,
       text: `

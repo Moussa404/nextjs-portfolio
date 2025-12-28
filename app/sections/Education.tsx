@@ -6,16 +6,21 @@ import { FiBook, FiBookOpen, FiCalendar, FiCheck, FiTarget } from "react-icons/f
 const Education = () => {
   const educationHistory = [
     {
-      degree: "Diploma in Engineering",
-      institution: "Mangrove Institute of Science and Technology",
-      period: "2023 - 2027 (Expected)",
-      description: "Currently pursuing a Diploma in Engineering with a focus on technological innovations and practical applications.",
+      degree: "LT in Information Technology",
+      institution: "Alafaq",
+      period: "2023 - 2024",
     },
     {
-      degree: "Secondary School Certificate",
-      institution: "Hope Technical Institute",
-      period: "2021 - 2022",
-      description: "In 2022, I completed my Secondary School Certificate with a focus on General Mechanics, building a solid foundation in technical and mechanical concepts for further studies.",
+      degree: "advanced web developement Certificate",
+      institution: "Youbee.ai",
+      period: "oct 2024 - april 2025",
+      description: "In 2025, I completed a Web Development Certificate with Youbee.ai, gaining practical experience in full stack web development. This program strengthened my skills in both frontend and backend technologies, including Laravel, and provided hands-on experience building functional, real-world web applications.",
+    },
+    {
+      degree: "Fundamentals of CyberSecurity Certificate",
+      institution: "Youbee.ai",
+      period: "dec 2024 - march 2025",
+      description: "I completed a Fundamentals of Cybersecurity Certificate, developing a strong understanding of core security principles and best practices. The program provided hands-on experience in identifying vulnerabilities, securing web applications, and implementing essential measures to protect digital systems.",
     },
   ];
 

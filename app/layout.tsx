@@ -49,13 +49,7 @@ export const metadata: Metadata = {
       }
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Moussa Jaafar | Freelancer And Web Developer From lebanon",
-    description: "Freelance web developer with 3+ years of experience creating responsive, user-friendly websites and web applications.",
-    images: ["/images/socialshare.png"],
-    creator: "@mehedihasan",
-  },
+
 };
 
 export default function RootLayout({
@@ -66,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://mehedims.com" />
+        <link rel="canonical" href="https://MoussaJa.com" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>

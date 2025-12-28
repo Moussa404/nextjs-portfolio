@@ -5,7 +5,7 @@ This directory contains screenshots and images for the featured projects in the 
 ## Required Images:
 
 1. **bdtools-home.png** - BD Tools developer platform
-2. **salman-blog.png** - WordPress blog website
+2. **salman-blog.png** -  blog website
 3. **afkzone-home.png** - Premium learning platform
 4. **jellytools.png** - Web utilities suite
 5. **asiabio.png** - Marketing platform with bio links

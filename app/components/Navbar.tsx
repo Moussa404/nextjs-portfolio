@@ -35,7 +35,6 @@ const Navbar = () => {
     { label: "About", path: "#about" },
     { label: "Experience", path: "#experience" },
     { label: "Education", path: "#education" },
-    { label: "Projects", path: "#projects" },
     { label: "Testimonials", path: "#testimonials" },
     { label: "Contact", path: "#contact" },
     // Uncomment the line below to show OG Test link in navbar (for your use only)

@@ -1,11 +1,11 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://mehedims.com',
+  siteUrl: 'https://MoussaJa.com',
   generateRobotsTxt: true,
   exclude: ['/test-og'],
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://mehedims.com/sitemap.xml',
+      'https://MoussaJa.com/sitemap.xml',
     ],
     policies: [
       {
