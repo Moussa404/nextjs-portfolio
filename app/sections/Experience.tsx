@@ -178,15 +178,6 @@ const Experience = () => {
                 {/* Link to work if available */}
                 {exp.url && (
                   <div className={`mt-5 ${index % 2 === 0 ? "text-right" : ""}`}>
-                    <a 
-                      href={exp.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-                    >
-                      View work
-                      <FiExternalLink className="ml-1" size={14} />
-                    </a>
                   </div>
                 )}
               </div>
