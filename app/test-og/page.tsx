@@ -1,0 +1,24 @@
+import { Metadata } from 'next';
+import TestOGContent from './TestOGContent';
+
+export const metadata: Metadata = {
+  title: 'Social Media Share Preview Test | Moussa Jaafar',
+  description: 'Test how your site appears when shared on social media platforms with proper OpenGraph tags.',
+  openGraph: {
+    title: 'Social Media Share Preview Test | Moussa Jaafar',
+    description: 'Test how your site appears when shared on social media platforms with proper OpenGraph tags.',
+    images: [
+      {
+        url: '/images/socialshare.png',
+        width: 1200,
+        height: 630,
+        alt: 'Moussa Jaafar - Web Developer Portfolio',
+      }
+    ],
+  },
+
+};
+
+export default function TestOGPage() {
+  return <TestOGContent />;
+} 

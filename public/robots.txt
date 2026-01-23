@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /test-og
+
+# Host
+Host: https://MoussaJa.com
+
+# Sitemaps
+Sitemap: https://MoussaJa.com/sitemap.xml
