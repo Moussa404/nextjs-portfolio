@@ -33,7 +33,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="section-padding bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <section id="education" className="section-padding bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
       <div className="container mx-auto container-padding">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,19 +65,19 @@ const Education = () => {
                 Academic History
               </h3>
             </div>
-            
+
             <div className="space-y-8 relative">
               {/* Vertical timeline line */}
-              <motion.div 
+              <motion.div
                 initial={{ height: 0 }}
                 whileInView={{ height: "100%" }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.5 }}
                 className="absolute left-6 top-6 w-1 h-full bg-gradient-to-b from-blue-500 via-blue-400 to-blue-300 dark:from-blue-600 dark:via-blue-500 dark:to-blue-400 rounded-full -z-10"
               ></motion.div>
-              
+
               {educationHistory.map((edu, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -93,8 +93,8 @@ const Education = () => {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
                     className="absolute left-4 top-4 w-4 h-4 rounded-full bg-blue-600 dark:bg-blue-400 border-4 border-white dark:border-gray-800 z-10"
                   ></motion.div>
-                  
-                  <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700 group">
+
+                  <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700 group">
                     <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {edu.degree}
                     </h4>
@@ -130,17 +130,17 @@ const Education = () => {
                 What I&apos;m Reading
               </h3>
             </div>
-            
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
+
+            <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                I believe in continuous learning and staying updated with the latest technologies. 
+                I believe in continuous learning and staying updated with the latest technologies.
                 Here&apos;s what I&apos;m currently exploring:
               </p>
-              
+
               <ul className="space-y-4">
                 {readings.map((item, index) => (
-                  <motion.li 
-                    key={index} 
+                  <motion.li
+                    key={index}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -156,8 +156,8 @@ const Education = () => {
                   </motion.li>
                 ))}
               </ul>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -171,8 +171,8 @@ const Education = () => {
                   </h4>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300">
-                  My goal is to become proficient in full-stack development with a focus on creating 
-                  scalable, user-friendly web applications. I&apos;m also interested in exploring 
+                  My goal is to become proficient in full-stack development with a focus on creating
+                  scalable, user-friendly web applications. I&apos;m also interested in exploring
                   emerging technologies like AI and machine learning.
                 </p>
               </motion.div>

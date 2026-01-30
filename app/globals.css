@@ -16,6 +16,16 @@
   }
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,31 +34,32 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  min-height: 100vh;
 }
 
 @layer components {
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-16 md:py-24 relative overflow-hidden;
   }
   
   .container-padding {
-    @apply px-4 sm:px-6 lg:px-8;
+    @apply px-4 sm:px-6 lg:px-8 w-full max-w-full;
   }
   
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold break-words;
   }
   
   .heading-lg {
-    @apply text-3xl md:text-4xl font-bold;
+    @apply text-3xl md:text-4xl font-bold break-words;
   }
   
   .heading-md {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl md:text-3xl font-bold break-words;
   }
   
   .paragraph {
-    @apply text-base md:text-lg;
+    @apply text-base md:text-lg break-words;
   }
 }
 

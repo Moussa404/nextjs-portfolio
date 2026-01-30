@@ -81,7 +81,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section id="experience" className="section-padding bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
       <div className="container mx-auto container-padding">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,7 +137,7 @@ const Experience = () => {
                 <FiBriefcase size={24} />
               </div>
 
-              <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:border-blue-200 dark:hover:border-blue-800">
+              <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:border-blue-200 dark:hover:border-blue-800">
                 <div className={`flex flex-col ${index % 2 === 0 ? "md:items-end" : ""}`}>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {exp.title}

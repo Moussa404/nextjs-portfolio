@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: <FiCode size={24} />,
       title: "Frontend Development",
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript","next.js"],
+      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "next.js"],
     },
     {
       icon: <FiServer size={24} />,
@@ -30,7 +30,7 @@ const About = () => {
     {
       icon: <FiDatabase size={24} />,
       title: "Database",
-      skills: ["MySQL","PhpMyAdmin"],
+      skills: ["MySQL", "PhpMyAdmin"],
     },
     {
       icon: <FiLayout size={24} />,
@@ -44,7 +44,7 @@ const About = () => {
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-blue-200/20 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/20 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto container-padding relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,25 +73,25 @@ const About = () => {
                 Who I Am
               </h3>
             </div>
-            
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden">
+
+            <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-100/30 dark:bg-blue-900/20 rounded-full blur-2xl"></div>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="paragraph text-gray-600 dark:text-gray-400 mb-6 leading-relaxed relative z-10"
               >
-               I am a web developer focused on building clean, functional,
-               and user-friendly websites and web applications. With hands-on 
-               experience in frontend and backend development, I’ve worked on real projects
+                I am a web developer focused on building clean, functional,
+                and user-friendly websites and web applications. With hands-on
+                experience in frontend and backend development, I’ve worked on real projects
                 including e-commerce platforms and business websites, and I’m continuously expanding my skills with
-                 modern web technologies.
+                modern web technologies.
               </motion.p>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -100,21 +100,21 @@ const About = () => {
               >
                 I have completed my License Technique (LT) in Information Technology and am currently gaining hands-on experience while earning certifications in web development and the fundamentals of cybersecurity.
               </motion.p>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="paragraph text-gray-600 dark:text-gray-400 leading-relaxed relative z-10"
               >
-                I specialize in building responsive websites, e-commerce platforms, and custom web applications 
+                I specialize in building responsive websites, e-commerce platforms, and custom web applications
                 for clients on Fiverr and other platforms, turning complex requirements into elegant, user-friendly solutions.
               </motion.p>
             </div>
-            
+
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -129,8 +129,8 @@ const About = () => {
                   <p className="text-gray-600 dark:text-gray-400">Web & Application Solutions</p>
                 </div>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -162,10 +162,10 @@ const About = () => {
                 My Skills
               </h3>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {categories.map((category, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -200,7 +200,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-16 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+          className="mt-16 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
         >
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-600 text-white flex items-center justify-center shadow-md mr-4 border-2 border-white dark:border-gray-800">
@@ -210,11 +210,11 @@ const About = () => {
               Skill Proficiency
             </h3>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -230,12 +230,12 @@ const About = () => {
                   </div>
                 </div>
                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
-                  <motion.div 
+                  <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.1 * index }}
-                    className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full shadow-inner" 
+                    className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full shadow-inner"
                   ></motion.div>
                 </div>
               </motion.div>
