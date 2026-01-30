@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import Logo from "./Logo";
@@ -11,6 +11,7 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, setTheme } = useTheme();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -27,12 +28,30 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const navItems = [
     { label: "About", path: "#about" },
+    { label: "Our Agency", path: "#services" },
     { label: "Experience", path: "#experience" },
     { label: "Education", path: "#education" },
     // Uncomment the line below to show OG Test link in navbar (for your use only)
@@ -41,8 +60,8 @@ const Navbar = () => {
 
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-        ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md'
-        : 'bg-white dark:bg-gray-900'
+      ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md'
+      : 'bg-white dark:bg-gray-900'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
@@ -61,24 +80,16 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="ml-2 p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
-              aria-label="Toggle theme"
+            <Link
+              href="#contact"
+              className="ml-2 px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-md hover:shadow-lg transition-all duration-300"
             >
-              {mounted && theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
-            </button>
+              Contact Us
+            </Link>
           </div>
 
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center">
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 mr-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none"
-              aria-label="Toggle theme"
-            >
-              {mounted && theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
-            </button>
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none"
@@ -92,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden">
+        <div ref={mobileMenuRef} className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
             {navItems.map((item) => (
               <Link
@@ -104,6 +115,13 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="#contact"
+              onClick={toggleMenu}
+              className="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-blue-600 to-blue-500 text-white text-center shadow-md mt-2"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       )}
